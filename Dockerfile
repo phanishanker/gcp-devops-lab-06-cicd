@@ -8,6 +8,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 
 EXPOSE 8080
-ENV APP_VERSION=v1
+ENV APP_VERSION=v2
 
 CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
