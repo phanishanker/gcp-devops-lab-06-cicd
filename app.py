@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    version = os.getenv("APP_VERSION", "v1")
-    return f"Hello from Lab 6 CI/CD! Host={socket.gethostname()} Version={version}\n"
+    version = os.getenv("APP_VERSION", "v2.Phanishanker Balle")
+    return f"Hello from Phanishanker Balle CI/CD! Host={socket.gethostname()} Version={version}\n"
 
 @app.route("/health")
 def health():
